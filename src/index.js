@@ -1,4 +1,8 @@
-
+//TODO: 
+// -Use a 'Game' or 'Main' component to act as a state manager of sorts,
+//  seperate out the 'snake' and 'apple' components into simply rendering elements
+// -fix the controls so it is smoother
+// -add a grid and adjust CSS so everything lines up better
 
 import React from 'react';
 import ReactDOM from 'react-dom';
