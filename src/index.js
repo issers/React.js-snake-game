@@ -156,7 +156,7 @@ class Game extends React.Component {
     update() {
         const snake = this.state.snake;
         const apple = this.state.apple;
-        Snake.update(1);
+        snake.update(1);
         if(snake.body[0][0] === apple.x && snake.body[0][1] === apple.y) {
             snake.grow();
             apple.newPosition();
@@ -168,8 +168,8 @@ class Game extends React.Component {
     render() {
         return(
             <div>
-                {Snake.render()}
-                {Apple.render()}
+                {this.state.snake.render()}
+                {this.state.apple.render()}
             </div>
         );
     }
